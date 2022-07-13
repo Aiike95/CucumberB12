@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/main/resources/features/products", //from content root
-        glue ="com/products/stepdefinition",
+        features = "src/main/resources/features/products", //from source root
+        glue ="com/products/stepdefinition", //from content type
         dryRun = false,
        // tags ="@product",
         tags = "@productTable",
